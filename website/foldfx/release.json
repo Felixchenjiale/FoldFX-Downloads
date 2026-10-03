@@ -1,0 +1,17 @@
+{
+  "product": "FoldFX Direct",
+  "version": "0.1.0",
+  "build": 4,
+  "architecture": "arm64",
+  "minimumDeploymentTarget": "macOS 15.0",
+  "testedEnvironment": "Apple M5 / macOS 27.0",
+  "otherMachinesVerified": false,
+  "channel": "direct-download",
+  "bundleIdentifier": "com.foldfx.app.direct",
+  "fileName": "FoldFX-Direct-0.1.0-4-notarized.zip",
+  "sha256": "40b20696b34150b2bb7acc4925b96b24baf157928b0f302b01b1901ec2579e62",
+  "downloadUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4-notarized.zip",
+  "releaseUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build4",
+  "notarized": true,
+  "appStoreRelease": false
+}
