@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="下载 FoldFX Direct：根据支持的 MacBook 机盖角度呈现投影与渐变毛玻璃效果。Apple Developer ID 签名并已公证；其他机型兼容性尚未验证。">
+  <title>FoldFX — 开合盖的视觉体验</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preload" as="image" href="./assets/glass.jpg">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="page" id="top">
+    <header class="header inset">
+      <a class="wordmark" href="#top" aria-label="FoldFX 首页">FoldFX</a>
+      <nav aria-label="主导航">
+        <a href="#getting-started">使用说明</a>
+        <a href="https://github.com/Felixchenjiale/FoldFX-Downloads" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero inset" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title"><span>让开合盖，</span><span>变成一种视觉体验。</span></h1>
+          <p class="intro">随 MacBook 机盖角度，让桌面呈现投影与渐变毛玻璃效果。</p>
+          <a class="download" id="download" href="https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4-notarized.zip" aria-describedby="release-caption">
+            下载 Direct 版
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none"><path d="M12 3v17m-7-7 7 7 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <p class="release-caption" id="release-caption">0.1.0（4） · Apple Silicon · macOS 15+</p>
+          <a class="verify-link" href="#verification" id="show-verification">查看版本与校验</a>
+        </div>
+        <figure class="hero-visual">
+          <img src="./assets/glass.jpg" width="1374" height="1145" alt="淡紫色半透明玻璃平面的效果意象" fetchpriority="high">
+          <figcaption>效果意象，非实机截图</figcaption>
+        </figure>
+      </section>
+      <section class="guide inset" id="getting-started" aria-label="安装与兼容说明">
+        <div class="steps">
+          <h2>开始使用</h2>
+          <ol>
+            <li><span aria-hidden="true" class="number">01</span><span>下载并解压</span></li>
+            <li><span aria-hidden="true" class="number">02</span><span>移入“应用程序”并打开</span></li>
+            <li><span aria-hidden="true" class="number">03</span><span>授权屏幕录制，选择内置屏</span></li>
+            <li><span aria-hidden="true" class="number">04</span><span>选择“自动跟随机盖”，开始效果</span></li>
+          </ol>
+        </div>
+        <div class="notes">
+          <h2>下载前请注意</h2>
+          <p>仅 M5 / macOS 27 实机验证。其他机型与系统未验证，自动机盖输入取决于硬件支持。</p>
+          <p>Direct 官网版，与沙盒版独立。当前未上架 App Store。</p>
+          <p>屏幕画面仅在本机内存处理，不保存、不上传。故障报告由你主动导出。</p>
+        </div>
+      </section>
+      <details class="verification" id="verification">
+        <summary class="inset">版本与文件校验<svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="m5 9 7 7 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <div class="verification-body inset">
+          <dl>
+            <div><dt>版本</dt><dd>FoldFX Direct 0.1.0（4） · arm64 · 2026-10-03</dd></div>
+            <div><dt>安全校验</dt><dd>Developer ID 签名、Apple 公证及票据验证通过。公证不等同于 App Store 审核或全机型兼容认证。</dd></div>
+            <div><dt>文件</dt><dd><a href="https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4-notarized.zip">FoldFX-Direct-0.1.0-4-notarized.zip</a></dd></div>
+            <div><dt>SHA-256</dt><dd><code id="checksum">40b20696b34150b2bb7acc4925b96b24baf157928b0f302b01b1901ec2579e62</code><div class="checksum-actions"><button id="copy-checksum" type="button">复制校验值</button><a href="https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/SHA256SUMS">下载校验文件</a><span id="copy-status" role="status" aria-live="polite"></span></div></dd></div>
+            <div><dt>当前更新</dt><dd>机盖静止时鼠标持续可见；真实开合结束后恢复可见。保留暂停、停止及退出的安全恢复。</dd></div>
+            <div><dt>兼容边界</dt><dd>最低部署配置为 macOS 15，不代表 macOS 15 已实测。Intel Mac 不支持此 arm64 包；未检测到支持的机盖传感器时，可使用手动或演示输入。登录/锁屏由系统接管。</dd></div>
+            <div><dt>反馈</dt><dd>从“诊断与恢复…”主动导出故障报告。提交反馈前检查内容，不要公开密码、个人信息或屏幕截图。当前不自动上传报告，也不自动更新应用。</dd></div>
+          </dl>
+          <p class="release-note"><a href="https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build4" target="_blank" rel="noopener noreferrer">在 GitHub 查看本次发布</a></p>
+        </div>
+      </details>
+    </main>
+    <footer class="footer inset">
+      <a href="https://chenxiaoyue.com">FoldFX Direct</a>
+      <a href="https://github.com/Felixchenjiale/FoldFX-Downloads/issues" target="_blank" rel="noopener noreferrer">遇到问题？到 GitHub 反馈</a>
+    </footer>
+  </div>
+</body>
+</html>
