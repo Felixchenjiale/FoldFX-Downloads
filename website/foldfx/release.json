@@ -4,8 +4,6 @@
   "build": 4,
   "architecture": "arm64",
   "minimumDeploymentTarget": "macOS 15.0",
-  "testedEnvironment": "Apple M5 / macOS 27.0",
-  "otherMachinesVerified": false,
   "channel": "direct-download",
   "bundleIdentifier": "com.foldfx.app.direct",
   "fileName": "FoldFX-Direct-0.1.0-4.dmg",
