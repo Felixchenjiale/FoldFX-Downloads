@@ -6,10 +6,13 @@ FoldFX 根据支持的 MacBook 机盖角度，让桌面呈现投影与渐变毛�
 
 ## 下载
 
-- [FoldFX Direct 0.1.0（4）DMG 安装包](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4.dmg)
-- [ZIP 备用安装包](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4-notarized.zip)
-- [发布说明与网页部署包](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build4)
-- [DMG-SHA256SUMS](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/DMG-SHA256SUMS)
+- [FoldFX Direct 0.1.0（5）DMG 安装包](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build5/FoldFX-Direct-0.1.0-5.dmg)
+- [ZIP 备用安装包](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build5/FoldFX-Direct-0.1.0-5-notarized.zip)
+- [新版发布说明](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build5)
+- [DMG-SHA256SUMS](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build5/DMG-SHA256SUMS)
+- [历史 0.1.0（4）与网页部署包](https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build4)
+
+本次新增「光影投射」App图标，应用原投影、渐变模糊、机盖输入及鼠标参数不变。新版实际安装后的Finder呈现、干净用户首装及升级仍待人工验证；应用不自动升级，当前用户需自行下载后安装。
 
 安装包为 arm64，最低部署配置为 macOS 15。唯一实机验证环境为 Apple M5 / macOS 27；其他机型、其他系统和干净用户首装仍未验证。自动机盖输入取决于硬件支持，未检测到支持的传感器时可使用手动或演示输入。Intel Mac 不支持此包。
 
@@ -25,18 +28,18 @@ Developer ID 签名、Apple 公证及票据验证通过；公证不是 App Store
 DMG SHA-256：
 
 ```
-56bdd2d80c4226a3a8f60135b613099efc1da599f56c201597d94e9d8f57cc98
+d0a36d39cf52bba37639bc78acb2497205e65155aebb22076d1e73c7b4d3940a
 ```
 
-将DMG与DMG-SHA256SUMS放在同一目录，可运行 `shasum -a 256 -c DMG-SHA256SUMS` 校验下载内容。备用ZIP仍使用原SHA256SUMS，摘要为 `40b20696b34150b2bb7acc4925b96b24baf157928b0f302b01b1901ec2579e62`。DMG包含同一个已公证应用，没有重新构建或重新签名应用；DMG容器另行Developer ID签名、公证并附票据。
+将DMG与DMG-SHA256SUMS放在同一目录，可运行 `shasum -a 256 -c DMG-SHA256SUMS` 校验下载内容。新版备用ZIP使用同一新版Release中的SHA256SUMS，摘要为 `3cc7410889aa8d25f790a29706bb50ee74a6e23467adc71654880664709197a9`。DMG包含同一个已公证build5应用，封装时没有重新构建或重新签名应用；DMG容器另行Developer ID签名、公证并附票据。不要混用build4校验文件。
 
 ## 静态下载页
 
-页面源文件位于 `website/foldfx/`。无需 Node、构建命令或后端；复制整个 `foldfx` 目录即可部署到网站子目录。样式、脚本和图片使用相对路径，安装包链接指向本次 GitHub Release 的精确版本，不会自动跳到后续未经验证版本。
+页面源文件位于 `website/foldfx/`。网站内容本轮保持不变，现有页面和网页部署包仍指向历史build4，不会自动切换到本次build5；请从上方新版链接下载。网站内容讨论后再安排页面更新。无需 Node、构建命令或后端；复制整个 `foldfx` 目录即可部署到网站子目录，样式、脚本和图片使用相对路径。
 
 默认目标路径为 `https://chenxiaoyue.com/foldfx/`，网站部署由站点负责人执行。本仓库不修改现有主页、不设置 DNS、不创建 GitHub Pages 或其他托管账户。
 
-新版部署包为 `FoldFX-Web-Page-0.1.0-4-dmg-r1.zip`，校验文件为 `WEB-DMG-SHA256SUMS`；旧网页包保留但主下载仍为ZIP，不用于此次DMG页面部署。详细步骤见 [网站部署说明](website/DEPLOY.md)。页面配图是生成的效果意象，不是实际屏幕截图；页面不使用第三方统计、外部字体或跟踪脚本。
+最近的历史部署包为 `FoldFX-Web-Page-0.1.0-4-dmg-r1.zip`，校验文件为 `WEB-DMG-SHA256SUMS`，位于build4 Release；本次没有生成build5网页包。详细步骤见 [网站部署说明](website/DEPLOY.md)。页面配图是生成的效果意象，不是实际屏幕截图；页面不使用第三方统计、外部字体或跟踪脚本。
 
 GitHub 自动生成的 Source code 附件仅含下载页与说明，不是应用源码或安装包；安装请使用上面的具名DMG或备用ZIP。原direct-v0.1.0-build4源码tag不改；DMG网页修订另保留web-v0.1.0-build4-dmg-r1 tag。
 
