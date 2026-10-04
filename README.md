@@ -35,11 +35,11 @@ be771ee084c3cbc2194a551883e7b252b250dd6fb2f16c02791c532631cd4f81
 
 ## 静态下载页
 
-页面源文件位于 `website/foldfx/`。网站内容本轮保持不变，现有页面和网页部署包仍指向历史build4，不会自动切换到本次build8；请从上方新版链接下载。网站内容讨论后再安排页面更新。无需 Node、构建命令或后端；复制整个 `foldfx` 目录即可部署到网站子目录，样式、脚本和图片使用相对路径。
+页面源文件位于 `website/foldfx/`。当前页面源文件已更新为build8下载及校验信息，历史网页部署包仍为build4，请使用当前源文件。正式域名尚未部署。无需 Node、构建命令或后端；复制整个 `foldfx` 目录即可部署到网站子目录，样式、脚本和图片使用相对路径。
 
 默认目标路径为 `https://chenxiaoyue.com/foldfx/`，网站部署由站点负责人执行。本仓库不修改现有主页、不设置 DNS、不创建 GitHub Pages 或其他托管账户。
 
-最近的历史部署包为 `FoldFX-Web-Page-0.1.0-4-dmg-r1.zip`，校验文件为 `WEB-DMG-SHA256SUMS`，位于build4 Release；本次没有生成build8网页包。详细步骤见 [网站部署说明](website/DEPLOY.md)。页面配图是生成的效果意象，不是实际屏幕截图；页面不使用第三方统计、外部字体或跟踪脚本。
+历史部署包为 `FoldFX-Web-Page-0.1.0-4-dmg-r1.zip`，校验文件为 `WEB-DMG-SHA256SUMS`，位于build4 Release；本次更新源文件，没有生成新的网页归档包。详细步骤见 [网站部署说明](website/DEPLOY.md)。页面配图是生成的效果意象，不是实际屏幕截图；页面不使用第三方统计、外部字体或跟踪脚本。
 
 GitHub 自动生成的 Source code 附件仅含下载页与说明，不是应用源码或安装包；安装请使用上面的具名DMG或备用ZIP。原direct-v0.1.0-build4源码tag不改；DMG网页修订另保留web-v0.1.0-build4-dmg-r1 tag。
 

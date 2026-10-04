@@ -1,23 +1,23 @@
 {
   "product": "FoldFX Direct",
   "version": "0.1.0",
-  "build": 4,
+  "build": 8,
   "architecture": "arm64",
   "minimumDeploymentTarget": "macOS 15.0",
   "channel": "direct-download",
   "bundleIdentifier": "com.foldfx.app.direct",
-  "fileName": "FoldFX-Direct-0.1.0-4.dmg",
+  "fileName": "FoldFX-Direct-0.1.0-8.dmg",
   "fileFormat": "dmg",
-  "sha256": "56bdd2d80c4226a3a8f60135b613099efc1da599f56c201597d94e9d8f57cc98",
-  "downloadUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4.dmg",
-  "checksumUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/DMG-SHA256SUMS",
+  "sha256": "be771ee084c3cbc2194a551883e7b252b250dd6fb2f16c02791c532631cd4f81",
+  "downloadUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build8/FoldFX-Direct-0.1.0-8.dmg",
+  "checksumUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build8/DMG-SHA256SUMS",
   "backupZip": {
-    "fileName": "FoldFX-Direct-0.1.0-4-notarized.zip",
-    "sha256": "40b20696b34150b2bb7acc4925b96b24baf157928b0f302b01b1901ec2579e62",
-    "downloadUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/FoldFX-Direct-0.1.0-4-notarized.zip",
-    "checksumUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build4/SHA256SUMS"
+    "fileName": "FoldFX-Direct-0.1.0-8-notarized.zip",
+    "sha256": "aa1701b8c76667e424d977c9bc66a39ff266a9e2f2bb525881799bea42c6bc8f",
+    "downloadUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build8/FoldFX-Direct-0.1.0-8-notarized.zip",
+    "checksumUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/download/direct-v0.1.0-build8/SHA256SUMS"
   },
-  "releaseUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build4",
+  "releaseUrl": "https://github.com/Felixchenjiale/FoldFX-Downloads/releases/tag/direct-v0.1.0-build8",
   "notarized": true,
   "appStoreRelease": false
 }
